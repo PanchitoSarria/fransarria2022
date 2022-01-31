@@ -12,7 +12,7 @@ function Footer() {
           <a href="mailto:franasarria@gmail.com">franasarria@gmail.com</a>
         </p>
         <p>
-          <a href="https://www.linkedin.com/in/francisco-andres-sarria/" target='_blank'>
+          <a href="https://www.linkedin.com/in/francisco-andres-sarria/" target='_blank' rel="noreferrer">
             https://www.linkedin.com/in/francisco-andres-sarria/
           </a>
         </p>

@@ -39,7 +39,7 @@ function WorkCard({workImage, date, text, tools, links}) {
                 links.map( link => {
                     return (
                         <div key={link[0]}>
-                            <a href={link[0]}>
+                            <a href={link[0]} target='_blank' rel="noreferrer">
                                 {link[1]}
                             </a>
                         </div>
