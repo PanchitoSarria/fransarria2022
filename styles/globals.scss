@@ -1,0 +1,164 @@
+@use './mediaqueries.scss';
+@use './css-root-var.scss';
+@use 'reset';
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: soleil, sans-serif;
+  // font weights:
+  // light: 300
+  // regular: 400
+  // book: 500
+  // bold: 700
+  
+  color: var(--color-text-main);
+  text-rendering: geometricPrecision;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+
+.hide{
+  position: fixed;
+  top: -1000em;
+  left: -1000em;
+}
+
+
+
+.section{
+  padding: 2rem 0;
+
+  padding-top: clamp(4rem, 7vh + .01rem, 10rem);
+  padding-bottom: clamp(4rem, 7vh + .01rem, 10rem);
+
+  @media all and (min-width: mediaqueries.$mq-tablet-sm){
+    padding-top: clamp(6rem, 7vh + .01rem, 10rem);
+    padding-bottom: clamp(6rem, 7vh + .01rem, 10rem);
+  }
+
+  @media all and (min-width: mediaqueries.$mq-desktop-min){
+    padding-top: clamp(6rem, 14vh + .01rem, 10rem);
+    padding-bottom: clamp(6rem, 14vh + .01rem, 10rem);
+  }
+
+  &_base{
+      padding-top: 5rem;
+  }
+
+  &_solid{
+    background-color: var(--color-bckgnd-main);
+  }
+}
+
+
+.main_wpr{
+  padding: 0 1rem;
+  margin: 0 auto;
+  margin-bottom: 2.5em;
+
+  &:last-child(){
+    margin-bottom: 0;
+  }
+
+  @media all and (min-width: mediaqueries.$mq-mobile-md){
+    padding: 0 1.5rem;
+  }
+
+  @media all and (min-width: mediaqueries.$mq-tablet-sm){
+    padding: 0 5rem;
+    padding-left: clamp(5rem, 9.5vw + .01rem, 12rem);
+    padding-right: clamp(5rem, 9.5vw + .01rem, 12rem);
+  }
+
+  @media all and (min-width: mediaqueries.$mq-desktop-min){
+    // padding: 0;
+    // width: 68ch;
+  }
+}
+
+
+.h1_main--title{
+  font-weight: 700;
+  font-size: 2rem;
+  font-size: clamp(1.5rem, 10vw + .01rem, 3rem);
+  line-height: 1.35;
+
+  @media all and (min-width: mediaqueries.$mq-desktop-min){
+    font-size: 3rem;
+    font-size: clamp(3rem, 4vw + .01rem, 5rem);
+  }
+}
+
+
+.h2_section{
+  font-weight: 500;
+  font-size: 2rem;
+  font-size: clamp(1.5rem, 7.5vw + .01rem, 3rem);
+
+  margin: 0;
+  margin-bottom: 2rem;
+  
+  margin-bottom: clamp(2rem, 2.4vh + .01rem, 3.5rem);
+
+  line-height: 1.2;
+
+  @media all and (min-width: mediaqueries.$mq-tablet-sm){
+    font-size: clamp(2rem, 3.5vw + .01rem, 4rem);
+  }
+  @media all and (min-width: mediaqueries.$mq-desktop-min){
+    font-size: clamp(1.5rem, 2.5vw + .01rem, 3rem);
+    margin-bottom: clamp(2rem, 4.4vh + .01rem, 3.5rem);
+  }
+}
+
+p{
+  font-size: 1rem;
+  font-size: clamp(1rem, 5vw + .01rem, 2rem);
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: .05em;
+
+  @media all and (min-width: mediaqueries.$mq-tablet-sm){
+    font-size: 1rem;
+    font-size: clamp(1rem, 2.6vw + .01rem, 3rem);
+  }
+
+  @media all and (min-width: mediaqueries.$mq-desktop-min){
+    font-size: 1.2rem;
+    font-size: clamp(1rem, 1.4vw + .01rem, 2.5rem);
+    letter-spacing: .05em;
+  }
+}
+
+.btn_link{
+  padding: .8em 1.2em;
+  border: var(--color-text-main) 1px solid;
+  border-radius: .4em;
+  text-align: center;
+
+  transition: all .3s ease-in-out;
+
+  font-size: 1.2rem;
+  font-size: clamp(1rem, 5vw + .01rem, 2rem);
+
+  @media all and (min-width: mediaqueries.$mq-tablet-sm){
+    font-size: 1rem;
+    font-size: clamp(1rem, 2.6vw + .01rem, 3rem);
+  }
+
+  @media all and (min-width: mediaqueries.$mq-desktop-min){
+    font-size: 1.2rem;
+    font-size: clamp(1rem, 1.4vw + .01rem, 2.5rem);
+  }
+
+  &:hover{
+    color: #fff;
+    background-color: var(--color-text-main);
+  }
+}

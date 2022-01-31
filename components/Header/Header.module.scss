@@ -1,0 +1,132 @@
+@use '../../styles/mediaqueries';
+
+.site_header{
+    background-color: #fff;
+    z-index: 10;
+    position: relative;
+    position: sticky;
+    top: 0;
+    height: 1.5rem;  
+    height: clamp(1.5rem, 10vh + .01rem, 15rem);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: #fafafa;
+
+    padding: 0 1rem;
+    margin: 0 auto;
+
+    @media all and (min-width: mediaqueries.$mq-mobile-md){
+      padding: 0 1.5rem;
+    }
+
+    @media all and (min-width: mediaqueries.$mq-tablet-sm){
+      // height: 1.5rem;
+      // height: clamp(1.5rem, 4vh + .01rem, 4rem);
+
+      padding: 0 5rem;
+      padding-left: clamp(5rem, 9.5vw + .01rem, 12rem);
+      padding-right: clamp(5rem, 9.5vw + .01rem, 12rem);
+    }
+
+    @media all and (min-width: mediaqueries.$mq-desktop-min){
+        height: 6rem;
+        height: clamp(5rem, 13.5vh + .01rem, 9rem);
+    }
+
+    
+}
+
+.site_logo{
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+
+  font-size: 1.4rem;
+  font-size: clamp(1rem, 7vw + .01rem, 2rem);
+
+  @media all and (min-width: mediaqueries.$mq-tablet-sm){
+    font-size: 1rem;
+    font-size: clamp(1rem, 2.8vw + .01rem, 3rem);
+  }
+
+  @media all and (min-width: mediaqueries.$mq-desktop-min){
+    font-size: 1.2rem;
+    font-size: clamp(1rem, 1.6vw + .01rem, 2.5rem);
+  }
+}
+
+
+.menu_btn{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+.open_menu{
+  
+  @media all and (min-width: mediaqueries.$mq-tablet-lg){
+    display: none;  
+  }
+}
+.close_menu{
+  font-size: 2rem;
+  
+  @media all and (min-width: mediaqueries.$mq-tablet-lg){
+    display: none;  
+  }
+}
+
+.main_menu{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 2rem;
+    width: 70vw;
+    background-color: var(--color-bckgnd-main);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+
+    @media all and (min-width: mediaqueries.$mq-tablet-lg){
+      width: auto;
+      padding: 0;
+      position: static;
+      flex-direction: row;
+      align-items: center;
+      background-color: #fff;
+    }
+
+    &_hide{
+      display: none;
+
+      @media all and (min-width: mediaqueries.$mq-tablet-lg){
+        display: flex;
+      }
+    }
+
+    a{
+        height: 100%;
+
+        font-size: 1.2rem;
+        font-size: clamp(1rem, 6vw + .01rem, 2rem);
+
+        @media all and (min-width: mediaqueries.$mq-tablet-sm){
+          font-size: 1rem;
+          font-size: clamp(1rem, 2.6vw + .01rem, 3rem);
+        }
+
+        @media all and (min-width: mediaqueries.$mq-tablet-lg){
+          padding: 0 1.5rem;
+        }
+      
+        @media all and (min-width: mediaqueries.$mq-desktop-min){
+          font-size: 1.2rem;
+          font-size: clamp(1rem, 1.4vw + .01rem, 2.5rem);
+        }
+    }
+}

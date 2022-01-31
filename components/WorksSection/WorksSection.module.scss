@@ -1,0 +1,11 @@
+@use '../../styles/mediaqueries';
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6vh;
+    @media all and (min-width: mediaqueries.$mq-tablet-lg){
+        grid-template-columns: 1fr 1fr;
+        gap: 4vw;
+    }
+}

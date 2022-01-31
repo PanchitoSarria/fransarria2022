@@ -1,0 +1,50 @@
+.container{
+    border: var(--color-text-main) solid 1px;
+    border-radius: .5em;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.card_image{
+    border-bottom: var(--color-text-main) solid 1px;
+}
+
+.card_info{
+    padding: 1rem;
+    padding: clamp(.5rem, 3vw + .01rem, 10rem);
+    padding-bottom: clamp(10rem, 18vh + .01rem, 20rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 2vw + .01rem, 6rem);
+}
+
+.card_date{
+    font-size: .9em;
+}
+
+.card_text{
+    line-height: 1.45;
+    letter-spacing: 0;
+}
+
+.tools_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5em;
+}
+
+.tool_item{
+    font-size: .9em;
+    color: #fff;
+    background-color: var(--color-text-main);
+    padding: .35em 1em;
+    border-radius: .5em;
+}
+
+.links_container{
+    position: absolute;
+    bottom: 1rem;
+    bottom: clamp(.5rem, 3vw + .01rem, 10rem);
+}
