@@ -6,7 +6,7 @@ import AndresAlvarez from '../../public/andres-alvarez.png'
 
 function WorksSection() {
     const andresTools = ['Next.js - Pages Router', 'CSS / SASS', 'Vercel']
-    const artAscTools = ['Next.js - App Router', 'TailwindCSS / CSS', 'Vercel']
+    const artAscTools = ['Next.js - App Router', 'TypeScript', 'TailwindCSS / CSS', 'Vercel']
 
     const andresLinks = [['https://andres-alvarez-panchitosarria.vercel.app/', 'https://andres-alvarez-panchitosarria.vercel.app/']]
     const artAscLinks = [['https://arteyasc2023.vercel.app/', 'https://arteyasc2023.vercel.app/']]
