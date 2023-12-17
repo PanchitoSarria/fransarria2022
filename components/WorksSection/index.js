@@ -5,11 +5,11 @@ import ArteagayAsociados from '../../public/arteaga-y-asociados.png'
 import AndresAlvarez from '../../public/andres-alvarez.png'
 
 function WorksSection() {
-    const andresTools = ['Next.js', 'React.js', 'CSS / SASS', 'Vercel']
-    const artAscTools = ['Next.js', 'React.js', 'CSS / SASS', 'nodemailer', 'next-translate', 'react hook form', 'Vercel']
+    const andresTools = ['Next.js - Pages Router', 'CSS / SASS', 'Vercel']
+    const artAscTools = ['Next.js - App Router', 'TailwindCSS / CSS', 'Vercel']
 
-    const andresLinks = [['https://andresalvarez.com.ar/', 'https://andresalvarez.com.ar/']]
-    const artAscLinks = [['https://xd.adobe.com/view/af68c84b-329c-4177-ab42-c27e067874bd-fa3b/?fullscreen&hints=off', 'Adobe XD UI design presentation'], ['https://artyasc-panchitosarria.vercel.app/', 'Development testing location']]
+    const andresLinks = [['https://andres-alvarez-panchitosarria.vercel.app/', 'https://andres-alvarez-panchitosarria.vercel.app/']]
+    const artAscLinks = [['https://arteyasc2023.vercel.app/', 'https://arteyasc2023.vercel.app/']]
 
     const andresText = `A simple and static one only page web for an accountant. Scroll navigation and mobile first. Design and development.`
     const artAscText = `A multi-languange web site for a brand and patent buffet. Mobile first and custom menu system. Design and development.`
