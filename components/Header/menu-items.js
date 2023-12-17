@@ -9,7 +9,7 @@ const menuItems = [
     },
     {
         itemUrl: '#work',
-        itemTitle: 'Work'
+        itemTitle: 'Projects'
     },
     {
         itemUrl: '#contact',

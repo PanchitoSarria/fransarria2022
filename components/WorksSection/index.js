@@ -17,18 +17,18 @@ function WorksSection() {
   return (
     <div className={styles.container}>
         <WorkCard
-            workImage={ArteagayAsociados}
-            date='Currently under development'
-            text={artAscText}
-            tools={artAscTools}
-            links={artAscLinks}
-        />
-        <WorkCard
             workImage={AndresAlvarez}
             date='Oct 2021'
             text={andresText}
             tools={andresTools}
             links={andresLinks}
+        />
+        <WorkCard
+            workImage={ArteagayAsociados}
+            date='Currently under development'
+            text={artAscText}
+            tools={artAscTools}
+            links={artAscLinks}
         />
     </div>
   )

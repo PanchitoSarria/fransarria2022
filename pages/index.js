@@ -23,15 +23,15 @@ export default function Home() {
             <h1 className='h1_main--title'>
               Francisco A. Sarría.<br />
               I`m Front-end Developer<br />
-              pasionated for react.js/next.js.
+              React.js and Next.js.
             </h1>
-            <p className={styles.hero_p}>
+            {/* <p className={styles.hero_p}>
               Currently pleased developing with React.js and Next.js and fascinated with all the JAMStack ecosystem.
-            </p>
+            </p> */}
           </div>
           <div className={`main_wpr ${styles.hero_btn_wpr}`}>
-            <a href="resume-francisco-sarria.pdf" className='btn_link' download>Download my C.V.</a>
-            <a href="#work" className='btn_link'>Check out my recent work!</a>
+            <a href="Francisco-Sarria-Resume.pdf" className='btn_link' download>Download my C.V.</a>
+            <a href="#work" className='btn_link'>Check out some projects</a>
           </div>
           <div className='main_wpr'>
             <ScrollCTA />
@@ -44,11 +44,16 @@ export default function Home() {
           </div>
           <div className='main_wpr'>
             <p className={styles.about_text}>
+Proficient Front-End Developer with 2+ years of experience designing and developing web apps and web sites. Specializes in React.js and Next.js with responsive design approach (mobile first).
+In all the projects in which I worked I’ve not only accomplished my task but also proposed solutions, additions or different ways to deliver value.
+Motivated to keep growing with new challenges and projects.
+            </p>
+            {/* <p className={styles.about_text}>
               I am from Argentina and started building webs with html, css and php (just a little bit) back in 2011.<br />
               In 2012 start working with Drupal 7 and keep doing it for several years but never happy with it.<br />
               In 2018 I quit the web world and come back in 2019 but this time with Wordpress.<br />
               In late 2019 I discovered the big javascript world: React.js, Vue.js, Angular, etc. and start studying development in Platzi (and in another webs and youtube) focus to get into the React.js world.
-            </p>
+            </p> */}
           </div>
           <div className={styles.portrait_wpr}>
             <Image              
