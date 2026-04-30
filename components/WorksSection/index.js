@@ -8,30 +8,30 @@ function WorksSection() {
     const andresTools = ['Next.js - Pages Router', 'CSS / SASS', 'Vercel']
     const artAscTools = ['Next.js - App Router', 'TypeScript', 'TailwindCSS / CSS', 'Vercel']
 
-    const andresLinks = [['https://andres-alvarez-panchitosarria.vercel.app/', 'https://andres-alvarez-panchitosarria.vercel.app/']]
-    const artAscLinks = [['https://arteyasc2023.vercel.app/', 'https://arteyasc2023.vercel.app/']]
+    const andresLinks = [['https://www.andresalvarez.com.ar', 'https://www.andresalvarez.com.ar']]
+    const artAscLinks = [['https://www.arteagayasociados.com.ar', 'https://www.arteagayasociados.com.ar']]
 
     const andresText = `A simple and static one only page web for an accountant. Scroll navigation and mobile first. Design and development.`
     const artAscText = `A multi-languange web site for a brand and patent buffet. Mobile first and custom menu system. Design and development.`
 
-  return (
-    <div className={styles.container}>
-        <WorkCard
-            workImage={AndresAlvarez}
-            date='Oct 2021'
-            text={andresText}
-            tools={andresTools}
-            links={andresLinks}
-        />
-        <WorkCard
-            workImage={ArteagayAsociados}
-            date='Currently under development'
-            text={artAscText}
-            tools={artAscTools}
-            links={artAscLinks}
-        />
-    </div>
-  )
+    return (
+        <div className={styles.container}>
+            <WorkCard
+                workImage={AndresAlvarez}
+                date='Oct 2021'
+                text={andresText}
+                tools={andresTools}
+                links={andresLinks}
+            />
+            <WorkCard
+                workImage={ArteagayAsociados}
+                date='Currently under development'
+                text={artAscText}
+                tools={artAscTools}
+                links={artAscLinks}
+            />
+        </div>
+    )
 }
 
 export default WorksSection;

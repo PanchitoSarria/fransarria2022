@@ -30,7 +30,7 @@ export default function Home() {
             </p> */}
           </div>
           <div className={`main_wpr ${styles.hero_btn_wpr}`}>
-            <a href="Francisco-Sarria-Resume.pdf" className='btn_link' download>Download my C.V.</a>
+            <a href="https://drive.google.com/drive/folders/1borS-m2IqffpctAKWX7daD6dxyJHTmjT" className='btn_link' target='_blank' rel='noopener noreferrer'>Download my C.V.</a>
             <a href="#work" className='btn_link'>Check out some projects</a>
           </div>
           <div className='main_wpr'>
@@ -44,9 +44,9 @@ export default function Home() {
           </div>
           <div className='main_wpr'>
             <p className={styles.about_text}>
-Proficient Front-End Developer with 2+ years of experience designing and developing web apps and web sites. Specializes in React.js and Next.js with responsive design approach (mobile first).
-In all the projects in which I worked I’ve not only accomplished my task but also proposed solutions, additions or different ways to deliver value.
-Motivated to keep growing with new challenges and projects.
+              Proficient Front-End Developer with 2+ years of experience designing and developing web apps and web sites. Specializes in React.js and Next.js with responsive design approach (mobile first).
+              In all the projects in which I worked I’ve not only accomplished my task but also proposed solutions, additions or different ways to deliver value.
+              Motivated to keep growing with new challenges and projects.
             </p>
             {/* <p className={styles.about_text}>
               I am from Argentina and started building webs with html, css and php (just a little bit) back in 2011.<br />
@@ -56,13 +56,13 @@ Motivated to keep growing with new challenges and projects.
             </p> */}
           </div>
           <div className={styles.portrait_wpr}>
-            <Image              
-                  src={portrait}
-                  alt='Self Portrait'
-                  width={1000}
-                  height={1000}
-                  layout="responsive"    
-                  sizes="(max-width: 768px) 90vw, (min-width: 769px) 55vw"
+            <Image
+              src={portrait}
+              alt='Self Portrait'
+              width={1000}
+              height={1000}
+              layout="responsive"
+              sizes="(max-width: 768px) 90vw, (min-width: 769px) 55vw"
             />
           </div>
         </section>
